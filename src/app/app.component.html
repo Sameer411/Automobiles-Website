@@ -1,0 +1,25 @@
+<div class="container" *ngIf="authService.isAuthenticated(); else loginForm">
+  
+  <div [ngClass]="{'dark-theme': isDarkTheme}">
+    <app-navigation></app-navigation>
+    <button class="logout-button" (click)="logout()">Logout</button>
+    <button class="theme-button" (click)="toggleTheme()">Toggle Theme</button>
+    <app-aboutus></app-aboutus>
+    <app-car></app-car>
+    <app-contact-form></app-contact-form>
+    <app-test-drive-request></app-test-drive-request>
+    <app-delivery-information></app-delivery-information>
+    <app-subscription-form></app-subscription-form>
+    <app-service-appointment-form></app-service-appointment-form>
+    <app-vehicle-customization-request-form></app-vehicle-customization-request-form>
+    <app-footer></app-footer>
+  </div>
+</div>
+
+<ng-template #loginForm>
+  <form class="login-form" (submit)="login(username.value, password.value)">
+    <input class="input-field" type="text" placeholder="Username is user only" #username>
+    <input class="input-field" type="password" placeholder="Password is password omly" #password>
+    <button class="login-button" type="submit">Login</button>
+  </form>
+</ng-template>

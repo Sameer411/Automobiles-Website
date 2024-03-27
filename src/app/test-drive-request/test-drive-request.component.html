@@ -1,0 +1,64 @@
+<h1>Test Drive Request Form</h1>
+<div class="card">
+    <div class="container">
+
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?cs=srgb&dl=pexels-pixabay-210019.jpg&fm=jpg" 
+        class="card-img-top" alt="..." width="100%" height="20%" />
+      </div>
+
+      <div class="form-container">
+        <form class="form-container" (ngSubmit)="submitForm()" #form="ngForm">
+
+          <div class="form-group">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone"><b>Phone Number:</b></label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="formData.phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="car"><b>Preferred Car:</b></label>
+            <select id="car" name="car" [(ngModel)]="formData.car" required>
+              <option value="">Select a car</option>
+              <option value="Toyota">Maruti Fronx</option>
+              <option value="Honda">Hyndai Creta N Line</option>
+              <option value="Ford">Mahindra Scorpio N</option>
+              <option value="Chevrolet">Mahindra Thar</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="ModelName"><b>Model Name & Number:</b></label>
+            <input type="text" id="ModelName" name="ModelName" [(ngModel)]="formData.ModelName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="PriceRange"><b>Price Range:</b></label>
+            <input type="text" id="PriceRange" name="PriceRange" [(ngModel)]="formData.PriceRange" required>
+          </div>          
+
+          <div class="form-group">
+            <label for="date"><b>Date:</b></label>
+            <input type="date" id="date" name="date" [(ngModel)]="formData.PriceRange" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time"><b>Time:</b></label>
+            <input type="time" id="time" name="time" [(ngModel)]="formData.PriceRange" required>
+          </div>
+
+          <button type="submit" [disabled]="form.invalid">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>

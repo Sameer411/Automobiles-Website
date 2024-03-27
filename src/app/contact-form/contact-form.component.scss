@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    margin: 2rem;    
+  }
+  
+  .form-container,
+  .image-container {
+    flex: 1;
+  }
+  
+  .form-container {
+    padding: 20px;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"]{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    padding: 10px ;
+    box-shadow: 0 0 8px gray;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .image-container {
+    text-align: center;
+  }
+  
+  h1{
+    text-align: center;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

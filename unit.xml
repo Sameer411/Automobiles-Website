@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 122.0.6261.131 (Windows 10)" package="unit" timestamp="2024-03-26T21:26:39" id="0" hostname="5167B-Sameer" tests="22" errors="0" failures="0" time="0.255">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/122.0.6261.131 Safari/537.36"/>
+  </properties>
+  <testcase name="SubscriptionFormComponent should create the app subscription form component " time="0.053" classname=".SubscriptionFormComponent"/>
+  <testcase name="SubscriptionFormComponent should enable submit button when form is valid" time="0.01" classname=".SubscriptionFormComponent"/>
+  <testcase name="TestDriveRequestComponent should create the app test drive request component " time="0.019" classname=".TestDriveRequestComponent"/>
+  <testcase name="ContactFormComponent should create the app contact form component " time="0.015" classname=".ContactFormComponent"/>
+  <testcase name="ContactFormComponent should enable submit button when form is valid" time="0.007" classname=".ContactFormComponent"/>
+  <testcase name="DeliveryInformationComponent should create the app delivery information form component " time="0.024" classname=".DeliveryInformationComponent"/>
+  <testcase name="AppComponent should be created" time="0.001" classname=".AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.012" classname=".AppComponent"/>
+  <testcase name="AppComponent should have as title 'Automobiles'" time="0.004" classname=".AppComponent"/>
+  <testcase name="AppComponent should create the app about us component" time="0.004" classname=".AppComponent"/>
+  <testcase name="AppComponent should create the app car component" time="0.008" classname=".AppComponent"/>
+  <testcase name="AppComponent should create the app footer component" time="0.005" classname=".AppComponent"/>
+  <testcase name="AppComponent should create the app Navigation component" time="0.006" classname=".AppComponent"/>
+  <testcase name="CarComponent should create" time="0.006" classname=".CarComponent"/>
+  <testcase name="AboutusComponent should create" time="0.004" classname=".AboutusComponent"/>
+  <testcase name="NavigationComponent should create" time="0.003" classname=".NavigationComponent"/>
+  <testcase name="FooterComponent should create" time="0.003" classname=".FooterComponent"/>
+  <testcase name="VehicleCustomizationRequestFormComponent should create the app vehicle customization request form component " time="0.032" classname=".VehicleCustomizationRequestFormComponent"/>
+  <testcase name="VehicleCustomizationRequestFormComponent should enable submit button when form is valid test 1" time="0.009" classname=".VehicleCustomizationRequestFormComponent"/>
+  <testcase name="ServiceAppointmentFormComponent should enable submit button when form is valid" time="0.018" classname=".ServiceAppointmentFormComponent"/>
+  <testcase name="ServiceAppointmentFormComponent should create the app service appointment form component " time="0.01" classname=".ServiceAppointmentFormComponent"/>
+  <testcase name="AuthenticationService should be created" time="0.002" classname=".AuthenticationService"/>
+  <system-out>
+    <![CDATA[Chrome Headless 122.0.6261.131 (Windows 10) LOG: 'Form submitted:', Object{name: 'John Doe', email: 'johndoe@example.com', phone: '1234567890'}
+,Chrome Headless 122.0.6261.131 (Windows 10) LOG: 'Form submitted:', Object{name: 'John Doe', email: 'john@example.com', phone: '1234567890', subject: 'Test Subject', message: 'Test Message'}
+,Chrome Headless 122.0.6261.131 (Windows 10) LOG: 'Form submitted:', Object{name: 'John Doe', email: 'johndoe@example.com', phone: '1234567890', subject: '', message: '', Vname: '', Model: ''}
+,Chrome Headless 122.0.6261.131 (Windows 10) LOG: 'Form submitted:', Object{name: 'John Doe', email: 'johndoe@example.com', phone: '1234567890', Date: '2024-03-27', Time: '09:00', message: 'This is an urgent requirement'}
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

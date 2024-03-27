@@ -1,0 +1,101 @@
+<h1>Service Appoint Booking</h1>
+<div class="card">
+    <div class="container">
+
+      <div class="image-container">
+        <img src="https://media.istockphoto.com/id/1191912894/photo/car-mechanic-repairer-service-technician-checks-and-repairs-auto-engine.jpg?s=612x612&w=0&k=20&c=ICDUju1VssR4XuedonrdtTNGUBlZrIsu2JC54vfXEXI=" 
+        class="card-img-top" alt="..." height="60%"/>
+      </div>
+
+      <div class="form-container">
+        <form class="form-container" (ngSubmit)="submitForm()" #form="ngForm">
+
+          <div class="form-group">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone"><b>Phone Number:</b></label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="formData.phone" required>
+          </div>
+
+          <b>Select the services you want to be get done:</b>
+          <div class="checkbox-table">
+            <table>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service1" name="service1" [(ngModel)]="selectedServices['Oil change']">
+                    <label for="service1">Oil change</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service2" name="service2" [(ngModel)]="selectedServices['Tire rotation']">
+                    <label for="service2">Tire rotation</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service3" name="service3" [(ngModel)]="selectedServices['Brake inspection']">
+                    <label for="service3">Brake inspection</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service4" name="service4" [(ngModel)]="selectedServices['Engine tune-up']">
+                    <label for="service4">Engine tune-up</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service5" name="service5" [(ngModel)]="selectedServices['Wheel alignment']">
+                    <label for="service5">Wheel alignment</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service6" name="service6" [(ngModel)]="selectedServices['Diagnostic check']">
+                    <label for="service6">Diagnostic check</label>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>          
+
+          <div class="form-group">
+            <label for="date"><b>Delivery Date:</b></label>
+            <input type="date" id="date" name="date" [(ngModel)]="formData.Date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time"><b>Delivery Time:</b></label>
+            <input type="time" id="time" name="time" [(ngModel)]="formData.Time" required>
+          </div>
+
+          <div class="form-group">
+            <label for="Details"><b>Vehicle Details:</b></label>
+            <input type="text" id="Details" name="Details" [(ngModel)]="formData.phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message"><b>Additional Comments:</b></label>
+            <input placeholder="Provide Vehicle company, model, make year, VIN" type="text" id="message" name="message" [(ngModel)]="formData.message" required>
+          </div>
+          
+          <button type="submit" [disabled]="form.invalid">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>

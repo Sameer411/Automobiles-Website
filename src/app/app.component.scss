@@ -1,0 +1,135 @@
+/* Application-wide Styles */
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+  }
+  body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+  }
+  button {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+  
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* styles.css or your component's CSS file */
+  
+  .login-form {
+  width: 300px;
+  margin: 0 auto;
+  }
+  
+  .input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  }
+  
+  .theme-button{
+  float: left;
+  background-color: #007bff; /* Blue color, you can change it to your preferred color */
+  color: #fff; /* Text color */
+  
+  } 
+  
+  .login-button {
+  width: 107%;
+  padding: 10px;
+  background-color: #007bff; /* Blue color, you can change it to your preferred color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .logout-button {
+  float: right;
+  width: 10%;
+  padding: 10px;
+  background-color: #007bff; /* Blue color, you can change it to your preferred color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .login-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+  }
+  
+  .logout-button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+  }
+  
+  .login-button:active {
+  background-color: #0056b3; /* Darker blue color when button is clicked */
+  }
+  
+  #main-container{
+  width: 100%;
+  min-height: 100vh;
+  }
+  
+  #main-container.darkTheme {
+  background-color: #000;
+  }
+  
+  #main-container.darkTheme h1{
+  color: white;
+  }
+  
+  #main-container.darkTheme nav{
+  background-color: #fafafa;
+  }
+  
+  #main-container.darkTheme .nav-link{
+  color: #000;
+  }
+  
+  #main-container.darkTheme .nav-link.is-active{
+  color: #cb2d67;
+  }
+  
+  .light-theme {
+  background-color: #ffffff;
+  color: #000000;
+  }
+  
+  .dark-theme {
+  background-color: #333333;
+  color: #ffffff;
+  }
+  

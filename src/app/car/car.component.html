@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Cars Details</h1>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <div class="car-items-container">
+            <div *ngFor="let car of cars" class="car-item" [style.background-color]="getCardColor(car.price)">
+              <img [src]="car.image" alt="{{ car.name }}">
+                <div class="car-details">
+                  <h2>{{ car.name }}</h2>
+                    <p><b>Model:</b> {{ car.modelNumber }}</p>
+                    <p><b>Price:</b> $ {{ car.price }}</p>
+                    <p [style.color]="car.mileage < '15 mpg' ? 'red' : (car.mileage == '15 mpg' ? 'blue' : 'green')">
+                    <b>Mileage:</b> {{ car.mileage }}</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

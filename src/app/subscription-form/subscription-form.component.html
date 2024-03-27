@@ -1,0 +1,74 @@
+<h1>Subscription Request Form</h1>
+<div class="card">
+    <div class="container">
+      <div class="form-container">
+        <form class="form-container" (ngSubmit)="submitForm()" #form="ngForm">
+
+          <div class="form-group">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone"><b>Phone Number:</b></label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="formData.phone" required>
+          </div>
+
+          <b>Select the promotion option:</b>
+          <div class="checkbox-table">
+            <table>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service1" name="service1" [(ngModel)]="selectedServices['New vehicle releases']">
+                    <label for="service1">New vehicle releases</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service2" name="service2" [(ngModel)]="selectedServices['Promotions']">
+                    <label for="service2">Promotions</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service3" name="service3" [(ngModel)]="selectedServices['Events']">
+                    <label for="service3">Events</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service4" name="service4" [(ngModel)]="selectedServices['Newsletters']">
+                    <label for="service4">Newsletters</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service5" name="service5" [(ngModel)]="selectedServices['Special Offers']">
+                    <label for="service5">Special Offers</label>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>   
+          <br>
+          <button type="submit" [disabled]="form.invalid">Submit</button>
+        </form>
+      </div>
+      
+      <div class="image-container">
+        <img src="https://newsroom.porsche.com/.imaging/mte/porsche-templating-theme/image_1290x726/dam/pnr/2022/Company/Consulting-A-World-of-Cars-in-One-Subscription/Newsroom_Auto_Abo_1920x1080px_EN.jpg/jcr:content/Newsroom_Auto_Abo_1920x1080px_EN.jpg" 
+        class="card-img-top" alt="..." width="100%" />
+      </div>
+      
+    </div>
+  </div>

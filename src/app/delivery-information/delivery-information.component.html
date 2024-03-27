@@ -1,0 +1,56 @@
+<h1>Delivery Information Form</h1>
+<div class="card">
+    <div class="container">
+
+      <div class="form-container">
+        <form class="form-container" (ngSubmit)="submitForm()" #form="ngForm">
+
+          <div class="form-group">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone"><b>Phone Number:</b></label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="formData.phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="deliveryType"><b>Delivery Type:</b></label>
+            <select id="deliveryType" name="deliveryType" [(ngModel)]="selectedDeliveryType" (change)="deliveryTypeChanged()">
+              <option value="pickup">Pickup from office</option>
+              <option value="delivery">Delivery to your location</option>
+            </select>
+          </div>
+
+          <div *ngIf="selectedDeliveryType === 'delivery'" class="form-group">
+            <label for="address"><b>Address:</b></label>
+            <input type="text" id="address" name="address" [(ngModel)]="deliveryAddress" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="date"><b>Delivery Date:</b></label>
+            <input type="date" id="date" name="date" [(ngModel)]="formData.PriceRange" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time"><b>Delivery Time:</b></label>
+            <input type="time" id="time" name="time" [(ngModel)]="formData.PriceRange" required>
+          </div>
+
+          <button type="submit" [disabled]="form.invalid">Submit</button>
+        </form>
+      </div>
+      
+      <div class="image-container">
+        <img src="https://media.istockphoto.com/id/1317532671/photo/close-up-on-a-salesman-delivering-a-car-while-handling-the-keys.jpg?s=612x612&w=0&k=20&c=ONZG6pVwSPE0EarBk04M5X1oU_CTwPECw585Uy5F-ms=" 
+        class="card-img-top" alt="..." width="100%" height="20%" />
+      </div>
+
+    </div>
+  </div>

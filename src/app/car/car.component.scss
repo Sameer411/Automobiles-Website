@@ -1,0 +1,75 @@
+.car-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+  
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 0.5cm;
+}
+  
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.col{
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px gray;
+    flex-basis: 20rem;
+    text-align: center;
+}
+
+.card-title{
+    padding: 0%;
+    margin-top: 0%;
+}
+
+p{
+    text-align: left;
+}
+
+.car-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+  }
+  
+  .car-item {
+    width: 45%; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+  
+  .car-item img {
+    width: 12cm;
+    height: 7cm;
+  }
+  
+  .car-item {
+    border-radius: 2rem;
+  }
+
+  .car-details {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .car-item {
+      width: 100%; 
+    }
+  }
+
+.card{
+  border-radius: 5rem;
+}

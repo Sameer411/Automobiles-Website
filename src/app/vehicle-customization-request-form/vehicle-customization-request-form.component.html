@@ -1,0 +1,97 @@
+<h1>Vehicle Customization Request</h1>
+<div class="card">
+    <div class="container">
+      <div class="form-container">
+        <form class="form-container" (ngSubmit)="submitForm()" #form="ngForm">
+
+          <div class="form-group">
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" name="email" [(ngModel)]="formData.email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone"><b>Phone Number:</b></label>
+            <input type="tel" id="phone" name="phone" [(ngModel)]="formData.phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="Vname"><b>Vehicle Name:</b></label>
+            <input type="text" id="Vname" name="Vname" [(ngModel)]="formData.Vname" required>
+          </div>
+
+          <div class="form-group">
+            <label for="Model"><b>Vehicle Model:</b></label>
+            <input type="text" id="Model" name="Model" [(ngModel)]="formData.Model" required>
+          </div>
+
+          <b>Select the customization needed to be get done:</b>
+          <div class="checkbox-table">
+            <table>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service1" name="service1" [(ngModel)]="selectedServices['Desired Modifications']">
+                    <label for="service1">Desired Modifications</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service2" name="service2" [(ngModel)]="selectedServices['Additional Features ']">
+                    <label for="service2">Additional Features </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service3" name="service3" [(ngModel)]="selectedServices['Interior Customization']">
+                    <label for="service3">Interior Customization</label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service4" name="service4" [(ngModel)]="selectedServices['Exterior Customization']">
+                    <label for="service4">Exterior Customization</label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service5" name="service5" [(ngModel)]="selectedServices['Wheel and Tire Upgrades']">
+                    <label for="service5">Wheel and Tire Upgrades</label>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>   
+          <br>
+
+          <div class="form-group">
+            <label for="Model"><b>Estimated Budget:</b></label>
+            <input type="text" id="Model" name="Model" [(ngModel)]="formData.Model" required>
+          </div>
+
+          <div class="form-group">
+            <label for="Model"><b>Additional Comments</b></label>
+            <input type="text" id="Model" name="Model" [(ngModel)]="formData.Model" required>
+          </div>
+
+          <button type="submit" [disabled]="form.invalid">Submit</button>
+        </form>
+      </div>
+      
+      <div class="image-container">
+        <img src="https://w0.peakpx.com/wallpaper/999/452/HD-wallpaper-lamborghini-luxury-car-sports-car-luxury-cars-vertical-cars-thumbnail.jpg" 
+        class="card-img-top" alt="..." height="650" width="500" />
+      </div>
+      
+    </div>
+  </div>
+  <br>
+  <br>
